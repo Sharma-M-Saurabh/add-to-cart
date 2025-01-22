@@ -5,6 +5,8 @@ import store from './store/store';
 import { Cart } from './pages/Cart';
 import NavbarComponent from './components/Navbar';
 import Product from './components/Product';
+// import ('https://fonts.cdnfonts.com/css/playfair-display');
+
 
 
 function App() {
@@ -14,8 +16,11 @@ function App() {
         <BrowserRouter>
           <NavbarComponent />
           <Routes>
+            {/* <div style={{backgroundColor : "#e6e8fa"}}> */}
+
             <Route path="/" element={<Product />} />
             <Route path='/cart' element={<Cart />} />
+            {/* </div> */}
 
           </Routes>
 
